@@ -14,7 +14,7 @@ namespace ePizza.Entities.Concrete
 		}
 
 
-		public int ID { get; set; }
+		public string ID { get; set; }
 
 		public int UserId { get; set; }
 
@@ -32,6 +32,6 @@ namespace ePizza.Entities.Concrete
 
 		public string Locality { get; set; }
 
-		public string PhoneNumber { get; set; }
+		public string PhoneNumber { get;  set; }
 	}
 }

@@ -23,7 +23,7 @@ namespace ePizza.Data.Concrete.EntitityFramework.Mappings
 			builder.Property(a => a.ZipCode).HasMaxLength(10);
 			builder.Property(a => a.PhoneNumber).IsRequired();
 			builder.Property(a => a.PhoneNumber).HasMaxLength(13); //+905423956439
-			builder.ToTable("Address"); // dybe tablo ismi address olarak gitsin.
+			builder.ToTable("Addresses"); // dybe tablo ismi address olarak gitsin.
 
 
 		}

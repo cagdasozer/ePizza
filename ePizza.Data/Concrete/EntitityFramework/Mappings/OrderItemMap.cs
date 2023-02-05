@@ -13,8 +13,8 @@ namespace ePizza.Data.Concrete.EntitityFramework.Mappings
 	{
 		public void Configure(EntityTypeBuilder<OrderItem> builder)
 		{
-			builder.HasKey(o => o.ID);
-			builder.Property(o => o.ID).ValueGeneratedOnAdd();
+			builder.HasKey(o => o.Id);
+			builder.Property(o => o.Id).ValueGeneratedOnAdd();
 			builder.Property(o => o.ProductId);
 			builder.Property(o => o.UnitPrice).IsRequired();
 			builder.Property(o => o.Total).IsRequired();

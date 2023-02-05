@@ -44,27 +44,27 @@ namespace ePizza.Data.Concrete.EntitityFramework.Contexts
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Server");
+			optionsBuilder.UseSqlServer("Server=DESKTOP-RG9CD6I\\SQLEXPRESS;Database=ePizzaDB;Trusted_Connection=True;");
 		}
 
+		//Db kurallarını burada db oluştururken veriyoruz.
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfiguration(new PaymentDetailsMap());
 			builder.ApplyConfiguration(new CartMap());
-
-			//builder.ApplyConfiguration(new ProductMap());
-
+			builder.ApplyConfiguration(new ProductMap());
 			builder.ApplyConfiguration(new ProductTypeMap());
 			builder.ApplyConfiguration(new CategoryMap());
 			builder.ApplyConfiguration(new AddressMap());
 			builder.ApplyConfiguration(new OrderMap());
 			builder.ApplyConfiguration(new OrderItemMap());
-
-			// builder.ApplyConfiguration(new RoleMap());
-
-
-
+			builder.ApplyConfiguration(new RoleMap());
+			builder.ApplyConfiguration(new UserMap());
+			builder.ApplyConfiguration(new UserTokenMap());
+			builder.ApplyConfiguration(new UserRoleMap());
+			builder.ApplyConfiguration(new UserLoginMap());
+			builder.ApplyConfiguration(new RoleClaimMap());
+			builder.ApplyConfiguration(new UserClaimMap());
 		}
-
 	}
 }
