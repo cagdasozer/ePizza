@@ -1,4 +1,4 @@
-﻿using ePizza.Entities.Dtos;
+﻿using ePizza.Entities.Dtos.Products;
 using ePizza.Shared.Utilities.Results.Abstract;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ePizza.Services.Interfaces
 {
-	public interface IProductService
+    public interface IProductService
 	{
 		Task<IDataResult<ProductDto>> GetAsync(int productId);
 

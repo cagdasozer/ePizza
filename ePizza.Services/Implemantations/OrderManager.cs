@@ -24,7 +24,20 @@ namespace ePizza.Services.Implemantations
 
 		public OrderModel GetOrderDetails(string orderId)
 		{
-			throw new NotImplementedException();
+			var model = _orderRepository.GetOrderDetails(orderId);
+			if (model != null && model.Products.Count > 0)
+			{
+				decimal sumTotal = 0;
+				foreach (var item in model.Products)
+				{
+					item.Total = item.UnitPrice + item.Quantity;
+					sumTotal += item.Total;
+				}
+				model.Total = sumTotal;
+				model.Tax = Math.Round(model.Total + 5 / 100, 2);
+				model.GrandTotal = model.Tax + model.Total;
+			}
+			return model;
 		}
 
 		public PagingListModel<OrderModel> GetOrderList(int page = 1, int pageSize = 10)

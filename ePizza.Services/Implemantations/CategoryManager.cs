@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ePizza.Entities.Concrete;
-using ePizza.Entities.Dtos;
+using ePizza.Entities.Dtos.Categories;
 using ePizza.Repositories.Implementations;
 using ePizza.Repositories.Interfaces;
 using ePizza.Services.Interfaces;
@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace ePizza.Services.Implemantations
 {
-	public class CategoryManager : ICategoryService
+    public class CategoryManager : ICategoryService
 	{
 		private readonly ICategoryRepository _categoryRepository;
 		public readonly IMapper _mapper;

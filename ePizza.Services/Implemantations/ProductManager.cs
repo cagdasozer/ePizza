@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using ePizza.Entities.Concrete;
-using ePizza.Entities.Dtos;
+using ePizza.Entities.Dtos.Products;
 using ePizza.Repositories.Interfaces;
 using ePizza.Services.Interfaces;
 using ePizza.Shared.Utilities.Results.Abstract;
@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ePizza.Services.Implemantations
 {
-	public class ProductManager : IProductService
+    public class ProductManager : IProductService
 	{
 		private readonly IProductRepository _productRepository;
 		public readonly IMapper _mapper;

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePizza.Data", "ePizza.Data\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePizza.Repositories", "ePizza.Repositories\ePizza.Repositories.csproj", "{0A5D6D7D-30FB-4541-B2DF-D20DB6F06711}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePizza.Shared", "ePizza.Shared\ePizza.Shared.csproj", "{CB24770D-4E70-402F-AD0D-12A35E30C9F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePizza.Shared", "ePizza.Shared\ePizza.Shared.csproj", "{CB24770D-4E70-402F-AD0D-12A35E30C9F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePizza.Services", "ePizza.Services\ePizza.Services.csproj", "{21F86BE4-691B-4651-A309-D7DC59B6CE87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ePizza.Services", "ePizza.Services\ePizza.Services.csproj", "{21F86BE4-691B-4651-A309-D7DC59B6CE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ePizza.UI", "ePizza.UI\ePizza.UI.csproj", "{D40316D7-74EB-45D2-A18F-72721C4BC95B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{21F86BE4-691B-4651-A309-D7DC59B6CE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21F86BE4-691B-4651-A309-D7DC59B6CE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21F86BE4-691B-4651-A309-D7DC59B6CE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40316D7-74EB-45D2-A18F-72721C4BC95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40316D7-74EB-45D2-A18F-72721C4BC95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40316D7-74EB-45D2-A18F-72721C4BC95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40316D7-74EB-45D2-A18F-72721C4BC95B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

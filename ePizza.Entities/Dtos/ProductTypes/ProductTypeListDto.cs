@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ePizza.Entities.Dtos
+namespace ePizza.Entities.Dtos.ProductTypes
 {
-	public class CategoryDto : DtoGetBase
-	{
-		public Category Category { get; set; }
-	}
+    public class ProductTypeListDto : DtoGetBase
+    {
+        public IList<ProductType> ProductTypes { get; set; }
+    }
 }

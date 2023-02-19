@@ -1,4 +1,4 @@
-﻿using ePizza.Entities.Dtos;
+﻿using ePizza.Entities.Dtos.Categories;
 using ePizza.Shared.Utilities.Results.Abstract;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ePizza.Services.Interfaces
 {
-	public interface ICategoryService
+    public interface ICategoryService
 	{
 		Task<IDataResult<CategoryListDto>> GetAllAsync();
 
